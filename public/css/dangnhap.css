@@ -1,0 +1,66 @@
+.main-content input{
+    padding: 7px;
+    width: 500px;
+    margin-top: 10px;
+    margin-bottom:15px;
+}
+.main-content .dangnhap{
+    margin-top: 30px;
+}
+.main-content .dangnhap2{
+    margin-top: 77px;
+}
+.main-content .dangky{
+    margin-top:30px;
+}
+.main-content .dangnhap button{
+    padding: 7px;
+    width:  130px;
+    margin-top: 20px;
+    background: rgb(31, 31, 31);
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+.main-content .dangky button{
+    padding: 7px;
+    width:  200px;
+    margin-top: 15px;
+    background: rgb(56, 56, 56);
+    color: rgb(255, 255, 255);
+}
+.main-content a{
+    text-decoration: none;
+    color: rgb(35, 35, 35);
+    margin-left: 20px;
+}
+.main-content .noidung{
+    margin-top: 20px;
+    margin-bottom: 16px;
+}
+.main-content .them{
+    text-align: center;
+}
+.main-content .them h5{
+    margin-bottom: -1px;
+}
+.main-content .them i{
+    font-size: 30px;  
+    padding: 10px; 
+    margin-bottom: 20px;
+}
+.dangnhap h4{
+    margin-bottom: 20px;
+}
+.dangnhap p{
+    font-size: 13px;
+    margin-bottom: -5px;
+}
+.dangnhap2 p{
+    font-size: 13px;
+    margin-bottom: -5px;
+}
+#error{
+    color: rgb(248, 7, 7);
+    font-size: 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}

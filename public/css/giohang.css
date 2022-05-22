@@ -1,0 +1,13 @@
+body{
+    background: #fff;
+}
+.cart_navigation button{
+    padding: 7px;
+    width: 200px;
+    background: rgb(239, 57, 57);
+    margin-bottom: 10px;
+    
+}
+.cart_navigation .btn button{
+    text-align: left;
+}

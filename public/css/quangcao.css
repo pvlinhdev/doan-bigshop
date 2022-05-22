@@ -1,0 +1,71 @@
+/* Hiệu ứng phóng to */
+.danhmuc .hover02 .img-qcao img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.danhmuc .hover02 .img-quangcao:hover img {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.column02 {
+    padding: 0;
+}
+
+.column02:last-child {
+    padding-bottom: 60px;
+}
+
+.column02::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.column02 div {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 100%;
+
+    padding: 0;
+}
+
+.column02 div:first-child {
+    margin-left: 0;
+}
+
+.column02 div span {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    z-index: -1;
+    display: block;
+    width: 300px;
+    margin: 0;
+    padding: 0;
+    color: #444;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    opacity: 0;
+}
+
+.img-qcao {
+    width: 100%px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    overflow: hidden;
+}
+
+.img-qcao:hover+span {
+    bottom: -36px;
+    opacity: 1;
+}

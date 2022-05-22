@@ -1,0 +1,24 @@
+
+.main-chinh h5{
+    margin-top: 15px;
+    margin-bottom: 8px;
+    font-size: 30px;
+}
+.img-tintuc img{
+    width: 100%;
+    height: 180px;
+}
+.main-chinh  p{
+    margin-top: -4px;
+    text-align: justify;
+    font-size: 14px;
+
+}
+.main-chinh a{
+    text-decoration: none;
+    color: red;
+}
+.main-chinh b{
+  color: rgb(52, 51, 51);
+font-size: 19px;
+}
