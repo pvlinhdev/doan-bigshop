@@ -51,7 +51,7 @@
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                         <h1 class="h3 mb-0 text-gray-800">Admin Panel</h1>
-                        <a href="<?php echo getAdminUrl('categories/createProduct.php'); ?>" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                        <a href="<?php echo getAdminUrl('product/create.php'); ?>" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
                                 class="fas fa-download fa-sm text-white-50"></i>Add Product</a>
                     </div>
 
@@ -78,15 +78,15 @@
                                     <tbody>
                                     <?php $categories = getAllProduct(); 
                                     ?>
-                                    <?php foreach($categories as $category) { ?>
+                                    <?php foreach($categories as $product) { ?>
                                         <tr>
                                             <td><?php echo increment($i); ?></td>
-                                            <td><?php echo $category['name']; ?></td>
-                                            <td><?php echo $category['price']; ?></td>
-                                            <td><?php echo $category['quantity']; ?></td>
-                                            <td><img style="width: 100px; height: 100px;" src="<?php echo $category['image']; ?>" alt=""></td>
-                                            <td><a href="edit.php?id=<?php echo $category['id']; ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a></td>
-                                            <td><a href="deleteproduct.php?id=<?php echo $category['id']; ?>"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
+                                            <td><?php echo $product['name']; ?></td>
+                                            <td><?php echo $product['price']; ?></td>
+                                            <td><?php echo $product['quantity']; ?></td>
+                                            <td><img style="width: 100px; height: 100px;" src="<?php echo $product['image']; ?>" alt=""></td>
+                                            <td><a href="edit.php?id=<?php echo $product['id']; ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a></td>
+                                            <td><a href="delete.php?id=<?php echo $product['id']; ?>"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
                                         </tr>
                                     <?php } ?>
                                     </tbody>

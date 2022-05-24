@@ -3,8 +3,8 @@
 <?php
     if(isset($_POST['name']) && isset($_POST['description']) && isset($_POST['id'])){
         $name = $_POST['name'];
-        $descripton = $_POST['description'];
-        $sql ="UPDATE categories set name= '$name' where id=" . $_POST['id'];
+        $description = $_POST['description'];
+        $sql ="UPDATE categories set name= '$name', description= '$description' where id=" . $_POST['id'];
         $pdo->exec($sql);
 
         redirect(getAdminUrl('categories/indexCreate.php'));

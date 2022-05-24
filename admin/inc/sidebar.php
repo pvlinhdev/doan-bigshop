@@ -53,8 +53,8 @@
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Products:</h6>
-                        <a class="collapse-item" href="<?php echo getAdminUrl('categories/indexProduct.php'); ?>">All</a>
-                        <a class="collapse-item" href="<?php echo getAdminUrl('categories/createProduct.php'); ?>">Add Products</a>
+                        <a class="collapse-item" href="<?php echo getAdminUrl('product/index.php'); ?>">All</a>
+                        <a class="collapse-item" href="<?php echo getAdminUrl('product/create.php'); ?>">Add Products</a>
                     </div>
                 </div>
             </li>
