@@ -20,13 +20,20 @@ function getAllProduct() {
 
     return $query;
 }
-
 function deleteCategory($id) {
 
 }
 
 function updateCategory($id) {
 
+}
+function getProduct($id) {
+    $sql = "select * from product where id=? LIMIT 1";
+    global $pdo;
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute([$id]);
+
+    return $stmt->fetch();
 }
 
 function getCategory($id) {
@@ -50,7 +57,7 @@ function increment(&$i = 1) {
  * Url helpers
  */
 function getAdminUrl($url) {
-    return 'http://localhost:81/bigshop/admin/' . $url;
+    return 'http://localhost:81/bigshop/doan-bigshop/admin/' . $url;
 }
 
 function redirect($url) {

@@ -68,9 +68,9 @@ function xoa()
                                     <img style="width: 100px; height: 100px;" src="<?php echo $product['image']; ?>" alt="">
                                 </td>
                                 <td><?php echo $product['name']; ?></td>
-                                <td><?php echo $product['price']; ?></td>
+                                <td><?php echo $product['price']; ?>,000đ</td>
                                 <td><?php echo $product['quantity']; ?></td>
-                                <td><?php echo calc_product_price($product); ?></td>
+                                <td><?php echo calc_product_price($product); ?>,000đ</td>
                                 <td><a href="cart.php?delid=?">Xoá</a></td>
                             </tr>
                         <?php    } ?>

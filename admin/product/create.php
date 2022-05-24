@@ -1,13 +1,13 @@
 <?php require_once '../libs/functions.php' ?>
 <?php
-    if(isset($_POST['name']) && isset($_POST['products'])){
+    if(isset($_POST['name']) && isset($_POST['price'])){
         $name = $_POST['name'];
         $price = $_POST['price'];
         $quantity = $_POST['quantity'];
         $image = $_POST['image'];
-        $sql = "insert into products(name, price, quantity, image) values('$name','$price','$quantity','$image')";
+        $sql = "insert into products(name, price, quantity, image) values('$name', $price, $quantity, '$image')";
         $pdo->exec($sql);
-        redirect(getAdminUrl('categories/indexProduct.php'));
+        redirect(getAdminUrl('product/index.php'));
     }
 ?>
 <!DOCTYPE html>
@@ -50,17 +50,15 @@
                 <!-- Topbar -->
                 <?php include_once '../inc/topbar.php' ?>
                 <!-- End of Topbar -->
-
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                         <h1 class="h3 mb-0 text-gray-800">Admin Panel</h1>
-                        <a href="<?php echo getAdminUrl('categories/create.php'); ?>" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                                class="fas fa-download fa-sm text-white-50"></i>Add Category</a>
+                        <a href="<?php echo getAdminUrl('product/create.php'); ?>" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                                class="fas fa-download fa-sm text-white-50"></i>Add Product</a>
                     </div>
-
                     <!-- Content Row -->
                     <form method="post">
                         <div class="form-group">
